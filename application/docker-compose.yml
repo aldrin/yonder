@@ -1,0 +1,13 @@
+# This file models the infrastructure services required by the application
+mongo:
+  image: mongo:3.6.4-jessie
+  ports:
+    - 27017:27017
+
+rabbitmq:
+  image: rabbitmq:3.7.5-management
+  ports:
+    - 5672:5672
+    - 15672:15672
+
+    
